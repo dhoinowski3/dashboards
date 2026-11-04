@@ -24,29 +24,90 @@ candy <- candy |>
     .default = "other"
   ))
 
+candy1 <- candy |> 
+  mutate(quantity_type = case_when(
+    bar ~ "bar",
+    pluribus ~ "pluribus",
+    .default = NA_character_
+  ))
+
 # count(candy, type)
 ```
+
+# Plots
 
 ## Row 1
 
 ```{r}
 #| content: valuebox
-#| title: "Total Candies"
+#| title: "Number of Bar Candies"
 
 list(
-  icon = "basket",
-  color = "warning",
-  value = nrow(candy))
-
+  icon = "distribute-horizontal",
+  color = "success",
+  value = sum(candy$bar == "TRUE")
+  )
 ```
 
 ```{r}
 #| content: valuebox
-#| title: "Number of Fruity Candies"
+#| title: "Number of Pluribus Candies"
 
 list(
   icon = "basket",
   color = "warning",
-  value = sum(candy$type == "fruity")
+  value = sum(candy$pluribus == "TRUE")
     )
+```
+
+## Row 2
+
+```{r}
+
+bang_for_buck <- ggplot(candy, aes(pricepercent, winpercent, color = type, text = paste("Name:", competitorname))) +
+  geom_point() +
+  labs(title = "Price Percentage vs Win Percentage",
+       x = "Price Percentage",
+       y = "Win Percentage",
+       color = "Type")
+
+
+ggplotly(bang_for_buck)
+```
+
+```{r}
+
+sugar_single_plurb <- ggplot(candy1[!is.na(candy1$quantity_type), ], aes(quantity_type, sugarpercent)) +
+  geom_boxplot() +
+  labs(title = "Quantity Type vs Sugar Percentage",
+       x = "Quantity Type",
+       y = "Sugar Percent"
+      )
+
+
+ggplotly(sugar_single_plurb)
+```
+
+# Tables
+
+## Row 1
+
+```{r}
+##| title: Bill Length by Mass
+
+#penguins <- penguins |> 
+  #select(-c(year))
+
+#knitr::kable(penguins)
+```
+
+```{r}
+
+##| title: Bill Length by Mass
+
+#penguins <- penguins |> 
+ # select(-c(year))
+
+#knitr::kable(penguins)
+
 ```
