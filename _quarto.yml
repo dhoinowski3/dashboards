@@ -8,7 +8,6 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - penguins.qmd
     right:
       - href: http://dhoinowski3.github.io
         text: Back to Home Page

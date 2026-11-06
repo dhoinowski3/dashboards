@@ -9,6 +9,6 @@ format:
 
 ## Dashboards
 
-- Candy Dashboard: This dashboard is an analysis of data about various candies by companies. Comes from 538's Candy Rankings data from 2017.
+- [Candy Dashboard](http://dhoinowski3.github.io/dashboards/candy.html): This dashboard is an analysis of data about various candies by companies. Comes from 538's Candy Rankings data from 2017.
 
-- Palmer Penguin Dashboard: A dashboard concerning certain patterns and characteristics regarding penguins living in the Palmer Archipelago. Comes from the palmerpenguins package.
+- [Palmer Penguin Dashboard](http://dhoinowski3.github.io/dashboards/penguins.html): A dashboard concerning certain patterns and characteristics regarding penguins living in the Palmer Archipelago. Comes from the `palmerpenguins` package.
