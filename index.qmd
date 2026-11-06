@@ -1,9 +1,14 @@
 ---
 title: "dashboards"
 author: "Daniel Hoinowski"
+toc: false
 format: 
   html:
     theme: vapor
 ---
 
-This is the page for the dashboard projects of Daniel Hoinowski for the class CS201 Programming in R.
+## Dashboards
+
+- Candy Dashboard: This dashboard is an analysis of data about various candies by companies. Comes from 538's Candy Rankings data from 2017.
+
+- Palmer Penguin Dashboard: A dashboard concerning certain patterns and characteristics regarding penguins living in the Palmer Archipelago. Comes from the palmerpenguins package.
