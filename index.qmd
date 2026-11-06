@@ -1,8 +1,8 @@
 ---
 title: "dashboards"
 author: "Daniel Hoinowski"
-format:
-  dashboard:
+format: 
+  html:
     theme: vapor
 ---
 
