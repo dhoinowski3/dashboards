@@ -93,21 +93,10 @@ ggplotly(sugar_single_plurb)
 ## Row 1
 
 ```{r}
-##| title: Bill Length by Mass
+#| title: Percentages Table
 
-#penguins <- penguins |> 
-  #select(-c(year))
+candy <- candy |> 
+  select(competitorname, sugarpercent, pricepercent, winpercent, type)
 
-#knitr::kable(penguins)
-```
-
-```{r}
-
-##| title: Bill Length by Mass
-
-#penguins <- penguins |> 
- # select(-c(year))
-
-#knitr::kable(penguins)
-
+knitr::kable(candy)
 ```
