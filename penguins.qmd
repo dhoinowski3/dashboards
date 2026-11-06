@@ -1,7 +1,9 @@
 ---
 title: "Palmer Penguins Dashboard"
 author: "Daniel Hoinowski"
-format: dashboard
+format: 
+  dashboard:
+    theme: vapor
 ---
 
 ```{r}

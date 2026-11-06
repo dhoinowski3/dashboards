@@ -1,5 +1,9 @@
 ---
 title: "dashboards"
+author: "Daniel Hoinowski"
+format:
+  dashboard:
+    theme: vapor
 ---
 
 This is the page for the dashboard projects of Daniel Hoinowski for the class CS201 Programming in R.
