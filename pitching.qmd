@@ -69,8 +69,5 @@ ggplotly(heat_zone)
 
 ```{r}
 
-speed_spin <- ggplot(season_total, aes(release_speed, release_spin_rate)) +
-  geom_point()
 
-ggplotly(speed_spin)
 ```
