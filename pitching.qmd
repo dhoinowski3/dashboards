@@ -1,0 +1,24 @@
+---
+title: "pitching"
+author: "Daniel Hoinowski"
+date: "11/21/2026"
+format: 
+  dashboard:
+    theme: vapor
+---
+
+```{r}
+library(tidyverse)
+library(plotly)
+
+march_pitching <- read_csv("pitchingdata/may_2026_pitches.csv")
+april_pitching <- read_csv("pitchingdata/april_2026_pitches.csv")
+may_pitching <- read_csv("pitchingdata/may_2026_pitches.csv")
+june_pitching <- read_csv("pitchingdata/june_2026_pitches.csv")
+july_pitching <- read_csv("pitchingdata/july_2026_pitches.csv")
+august_pitching <- read_csv("pitchingdata/august_2026_pitches.csv")
+september_pitching <- read_csv("pitchingdata/september_2026_pitches.csv")
+
+
+
+```
