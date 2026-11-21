@@ -13,4 +13,4 @@ format:
 
 - [Palmer Penguin Dashboard](http://dhoinowski3.github.io/dashboards/penguins.html): A dashboard concerning certain patterns and characteristics regarding penguins living in the Palmer Archipelago. Comes from the `palmerpenguins` package.
 
-- Final Project Dashboard:
+- [Final Project Dashboard](https://dhoinowski3.github.io/dashboards/pitching.html):
