@@ -4,7 +4,7 @@ author: "Daniel Hoinowski"
 date: "11/21/2026"
 format: 
   dashboard:
-    theme: vapor
+    theme: zephyr
 ---
 
 ```{r}
@@ -63,4 +63,14 @@ heat_zone <- ggplot(season_total, aes(x = plate_x, y = plate_z)) +
   coord_fixed(xlim = c(-2.5, 2.5), ylim = c(0, 5))
 
 ggplotly(heat_zone)
+```
+
+## Row 2
+
+```{r}
+
+speed_spin <- ggplot(season_total, aes(release_speed, release_spin_rate)) +
+  geom_point()
+
+ggplotly(speed_spin)
 ```
